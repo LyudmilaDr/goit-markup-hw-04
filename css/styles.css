@@ -1,5 +1,4 @@
 :root {
-
   /* Fonts*/
  --main-font: 'Roboto', sans-serif;
  --secondary-font: 'Raleway', sans-serif;
@@ -127,9 +126,9 @@ margin-right:50px;
   flex-direction: row;
   margin-left: auto;
 }
-.icon-envelope,
-.icon-vector {
-  color: currentColor;
+
+.icon-all {
+fill: currentColor;
  
 }
 
@@ -225,7 +224,6 @@ background-size: cover;
   padding:25px 100px ;
   width:270px ;
   height:120px ;
-  background-size:contain;
   background-color:#F5F4FA ;
   background-position:center;
 }
@@ -295,10 +293,10 @@ margin-right: auto;
 .nero-meta {
  color:var(--text-color); 
  font-weight:400; 
+ margin-bottom:10px;
 }
 .nero-title-meta{
-padding-bottom: 30px;
-padding-top: 30px;
+padding:30px;
 
 }
 
@@ -319,6 +317,22 @@ padding-top: 30px;
 display: block;
 max-width: 100%;
 }
+.nero-item-icons{
+  width: 44px;
+  height: 44px;
+  padding:12px ;
+  border-radius: 50%;
+  fill: #AFB1B8;
+
+}
+.nero-item-icons:hover {
+fill: var(--title-text-color);
+background-color: #2196F3;
+border-radius: 50%;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+
 /**
   |============================
   | Holder-section
@@ -326,11 +340,36 @@ max-width: 100%;
 */
 .holder-caption {
   font-family:var(--main-font);
+  color: var(--primmaty-text-color);
   font-size: 36px;
   font-weight: 700;
   line-height:1.16;
   text-align: center;
+  margin-bottom: 50px;
   
+}
+.holder-item{
+  width :170px;
+  height:92px;
+  border:1px solid #AFB1B8;
+  border-radius: 4px;
+
+}
+.holder-item:not(:last-child) {
+  margin-right: 30px;
+}
+.holder-all{
+  fill:#AFB1B8;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 16px 32px;
+
+}
+
+.holder-all:hover {
+  fill:var(--accent-color) ;
+  border:1px solid var(--accent-color);
 }
 /**
   |============================
@@ -463,3 +502,32 @@ margin-top: 20px;
 .footer-all:focus {
  color: #188CE8;
 }
+.footer-title {
+font-family: var(-main-font);
+font-weight:700;
+font-size: 14px;
+color:var(--title-text-color);
+}
+.footer-container{
+  display: flex;
+}
+.footer-special{
+  margin-right:70px ;
+}
+.footer-item-icons{
+  width: 44px;
+  height: 44px;
+  padding:12px ;
+  border-radius: 50%;
+  fill:var(--title-text-color);
+background-color:rgba(255, 255, 255, 0.1) ;
+}
+.footer-item-icons:hover {
+  fill: var(--title-text-color);
+  background-color: #2196F3;
+  border-radius: 50%;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+  .footer-item:not(:last-child) {
+    margin-right: 30px;
+  }
