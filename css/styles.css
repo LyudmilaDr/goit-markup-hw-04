@@ -111,10 +111,11 @@ margin-right:50px;
   color:var(--accent-color);
   text-decoration: none;
 }
+
 .header-item {
   font-size:14px;
-  color: var(--primmaty-text-color);
   text-decoration: none;
+  color:var(--primmaty-text-color)
 }
 
 .header-item:focus,
@@ -126,11 +127,16 @@ margin-right:50px;
   flex-direction: row;
   margin-left: auto;
 }
+.icon-envelope,
+.icon-vector {
+  color: currentColor;
+ 
+}
 
 .header-all {
-  color:var(--text-color);
   font-size: 14px;
   text-decoration: none;
+  color:var(--text-color);
 }
 
 .header-all:hover,
@@ -149,8 +155,24 @@ margin-right:50px;
   background:var(--accent-bg-cl);
   text-transform: uppercase;
   text-align: center;
-  
 }
+
+ .overline{   
+  max-width:1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  outline:1px solid #C4C4C4;
+  background-image:linear-gradient(to right, 
+rgba(49, 47, 58, 0.4),
+rgba(49, 47, 58, 0.4)),
+url("../images/Img\(slog\).jpg");
+background-repeat:no-repeat;
+background-position:center;
+background-size: cover;
+
+}
+
 
 .cnt {
   font-size: 44px;
@@ -195,6 +217,17 @@ margin-right:50px;
   clip: rect(0000);
   clip-path: inset(50%);
   margin: -1px;
+}
+
+
+.about-box {
+  display:block;
+  padding:25px 100px ;
+  width:270px ;
+  height:120px ;
+  background-size:contain;
+  background-color:#F5F4FA ;
+  background-position:center;
 }
 
 .about-item:not(:last-child) {
@@ -266,12 +299,18 @@ margin-right: auto;
 .nero-title-meta{
 padding-bottom: 30px;
 padding-top: 30px;
+
 }
 
 .nero-item {
   font-weight:400;
   background-color: var(--title-text-color);
   text-align: center;
+  border-radius:1px;
+  box-shadow:0px 2px 1px 0px  rgba(0, 0, 0, 0.2),
+  0px  1px 1px 0px rgba(0, 0, 0, 0.14),
+  0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  
  }
 .nero-item:not(:last-child) {
   margin-right: 30px;
@@ -280,7 +319,19 @@ padding-top: 30px;
 display: block;
 max-width: 100%;
 }
-
+/**
+  |============================
+  | Holder-section
+  |============================
+*/
+.holder-caption {
+  font-family:var(--main-font);
+  font-size: 36px;
+  font-weight: 700;
+  line-height:1.16;
+  text-align: center;
+  
+}
 /**
   |============================
   | Portfolio
@@ -317,6 +368,11 @@ text-decoration: none;
   flex-wrap: wrap;
   gap: 30px;
 }
+.main-item:hover {
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16),
+  0px 4px 4px rgba(0, 0, 0, 0.06),
+  0px 1px 1px rgba(0, 0, 0, 0.12);
+}
 .main-title-meta{
 padding: 24px 20px;
 border-right: 1px solid #EEEEEE;
@@ -338,6 +394,7 @@ font-size: 18px;
  .main-all {
   text-decoration: none;
  }
+
 
  .main-img{
 display: block;
