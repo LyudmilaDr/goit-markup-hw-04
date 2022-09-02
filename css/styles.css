@@ -506,7 +506,9 @@ margin-top: 20px;
 font-family: var(-main-font);
 font-weight:700;
 font-size: 14px;
+line-height: 1,16;
 color:var(--title-text-color);
+margin-bottom: 20px;
 }
 .footer-container{
   display: flex;
