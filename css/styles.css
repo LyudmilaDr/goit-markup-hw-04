@@ -324,10 +324,9 @@ display: flex;
 justify-content:center;
 align-items: center;
 flex-direction: row;
+flex-basis:calc((100%-176px)/3) ;
 }
-.nero-item-icons:not(:last-child){
-margin-right:10px;
-}
+
 .nero-link-icons:hover {
 fill: var(--title-text-color);
 background-color: #2196F3;
