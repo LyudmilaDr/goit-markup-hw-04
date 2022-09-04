@@ -326,7 +326,7 @@ align-items: center;
 flex-direction: row;
 }
 .nero-item-icons:not(:last-child){
-gap: 10px;
+margin-right:10px;
 }
 .nero-link-icons:hover {
 fill: var(--title-text-color);
